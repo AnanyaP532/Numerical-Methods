@@ -23,5 +23,5 @@ a = (sumY - b*sumX)/n
 
 print('y', '=', a, '+', b,'x')
 xco=np.linspace(x[0],x[-1],100)
-plt.plot(x,y,'.')
+plt.plot(x,y,'*')
 plt.plot(xco,a+b*xco)
