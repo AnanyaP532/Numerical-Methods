@@ -1,4 +1,5 @@
-pol= [6,12,2,25]                         #for polynomial 6x^3 + 12x^2 + 2x + 25
+#synthetic division
+pol= [6,12,2,25]                         #for solving polynomial 6x^3 + 12x^2 + 2x + 25
 x= len(pol)-1                            
 n= len(pol)
 result=0
