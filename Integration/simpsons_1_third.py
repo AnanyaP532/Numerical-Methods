@@ -4,20 +4,17 @@ import numpy as np
 x=np.linspace(0,2,100)
 def f(x):
     return x**2
-
 def simpson(x0,xn,n):
     h = (xn - x0) / n 
-    integ = f(x0) + f(xn)
-    
+    s = f(x0) + f(xn)
     for i in range(1,n):
         k = x0 + i*h  
         if i%2 == 0:
-            integ = integ + 2 * f(k)
+            s = s + 2 * f(k)
         else:
-            integ = integ + 4 * f(k)
-    integ = integ * h/3
-    return integ
-    
+            s = s + 4 * f(k)
+    s = s * h/3
+    return s
 x0 = 0
 xn = 1
 n = 10
