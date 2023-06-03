@@ -2,16 +2,14 @@
 import numpy as np
 def f(x):
     return np.sin(x**2)
-
 def trapezoidal(x0,xn,n):
     h = (xn - x0) / n
-    integ = f(x0) + f(xn)
+    t = f(x0) + f(xn)
     for i in range(1,n):
       k = x0 + i*h
-      integ = integ + 2 * f(k)
-    
-    integ = integ * h/2
-    return integ
+      t = t + 2 * f(k)
+      t = t * h/2
+    return t
 x0 = 0
 xn = 1
 n = 4
