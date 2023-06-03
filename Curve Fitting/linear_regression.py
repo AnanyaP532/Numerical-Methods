@@ -1,12 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
-#n = int(input("number of data points:"))
-#x = np.zeros(n)
-#y = np.zeros(n)
-#print("Enter data:")
-#for i in range(n):
-    #x[i] = float(input("x["+str(i)+"]= "))
-    #y[i] = float(input("y["+str(i)+"]= "))
+#for user input
+n = int(input("number of data points:"))
+x = np.zeros(n)
+y = np.zeros(n)
+print("Enter data:")
+for i in range(n):
+    x[i] = input("x["+str(i)+"]= ")
+    y[i] = input("y["+str(i)+"]= ")
 #here we take an example of 3 data points
 x = [1,2,3]
 y = [3,2,9]
